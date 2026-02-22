@@ -1,91 +1,84 @@
-# WarmUp 📧
+# WarmUp
 
-> **Email Warm-up Service** - Automated email domain warm-up tool that gradually increases sending volume to improve deliverability and avoid spam filters.
+## Detailed Description
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Status: Active](https://img.shields.io/badge/status-active-success.svg)](https://github.com/yksanjo/WarmUp)
-[![GitHub stars](https://img.shields.io/github/stars/yksanjo/WarmUp?style=social)](https://github.com/yksanjo/WarmUp)
+WarmUp is maintained as an industry-grade software project with production-ready engineering practices.  
+This repository includes documented setup, quality gates, operational guidance, and governance standards so contributors can safely build, test, and ship changes with confidence.
 
-**WarmUp** helps you gradually increase your email sending volume to build sender reputation and improve deliverability. Perfect for cold email campaigns, transactional emails, and marketing automation.
+## Problem Statement
 
-## Features
+Describe the user or business problem this project solves, the target users, and expected outcomes.
 
-- 📧 Gradual email volume increase
-- 🔄 Automated sending schedule
-- 📊 Deliverability tracking
-- 🎯 Multiple email provider support
-- 📈 Warm-up progress monitoring
-- ⚙️ Customizable warm-up curves
+## Solution Overview
 
-## Installation
+Summarize the architecture, core modules, and runtime behavior at a high level.
 
-```bash
-pip install -r requirements.txt
+## Key Features
+
+- Clear project scope and intended use.
+- Reproducible local development workflow.
+- Test coverage and CI quality gates.
+- Security and contribution policies.
+- Deployment-ready repository structure.
+
+## Repository Structure
+
+```text
+.
+|-- src/                  # Core implementation
+|-- tests/                # Automated test suites
+|-- docs/                 # Design notes and operational docs
+|-- .github/workflows/    # CI pipelines
+|-- README.md
+|-- LICENSE
+|-- CONTRIBUTING.md
+|-- SECURITY.md
+|-- CODE_OF_CONDUCT.md
 ```
 
-## Configuration
+## Getting Started
 
-Create a `.env` file:
+### Prerequisites
 
-```env
-# Email Provider (SMTP)
-SMTP_HOST=smtp.gmail.com
-SMTP_PORT=587
-SMTP_USER=your-email@gmail.com
-SMTP_PASSWORD=your-app-password
+- Git
+- Project runtime/toolchain for this repo
 
-# Warm-up Settings
-WARMUP_DURATION_DAYS=30
-INITIAL_VOLUME=5
-TARGET_VOLUME=100
+### Local Setup
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt  # or: pip install -e .[dev]
+pytest
 ```
 
 ## Usage
 
-### Start Warm-up
+Document primary commands, API routes, CLI examples, or UI workflows here.
 
-```bash
-python warmup.py --start
-```
+## Quality Standards
 
-### Monitor Progress
+- CI must pass before merge.
+- Changes require tests for critical behavior.
+- Security-sensitive changes should include risk notes.
+- Keep pull requests focused and reviewable.
 
-```bash
-python warmup.py --status
-```
+## Security
 
-### Pause Warm-up
+See `SECURITY.md` for responsible disclosure and handling guidelines.
 
-```bash
-python warmup.py --pause
-```
+## Contributing
 
-### Resume Warm-up
+See `CONTRIBUTING.md` for branching, commit, and pull request expectations.
 
-```bash
-python warmup.py --resume
-```
+## Roadmap
 
-## Warm-up Strategy
+Track upcoming milestones, technical debt, and planned feature work.
 
-The service uses a gradual warm-up curve:
-- Week 1: 5-10 emails/day
-- Week 2: 10-25 emails/day
-- Week 3: 25-50 emails/day
-- Week 4: 50-100 emails/day
+## Support
 
-## Supported Providers
-
-- Gmail (SMTP)
-- Outlook/Office 365
-- SendGrid
-- Mailgun
-- Amazon SES
-- Custom SMTP
+Open a GitHub issue for bugs, feature requests, or documentation gaps.
 
 ## License
 
-MIT License
-
-
+This project is released under the MIT License.
