@@ -1,5 +1,12 @@
 # WarmUp
 
+Production-grade project scaffold focused on reliability, maintainability, and fast onboarding.
+
+[![CI](https://img.shields.io/github/actions/workflow/status/yksanjo/WarmUp/ci.yml?branch=main&label=ci)](https://github.com/yksanjo/WarmUp/actions)
+![License](https://img.shields.io/github/license/yksanjo/WarmUp)
+![Last Commit](https://img.shields.io/github/last-commit/yksanjo/WarmUp)
+![Repo Size](https://img.shields.io/github/repo-size/yksanjo/WarmUp)
+
 ## Detailed Description
 
 WarmUp is maintained as an industry-grade software project with production-ready engineering practices.  
